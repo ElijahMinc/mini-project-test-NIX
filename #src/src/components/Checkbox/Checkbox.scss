@@ -1,0 +1,21 @@
+@import "../App/root/root.scss";
+.checkbox {
+   display: inline-block;
+   input {
+      display: none;
+   }
+   &__body {
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      background-color: $color-purple;
+      cursor: pointer;
+   }
+}
+
+.checkbox.checked .checkbox__body {
+   background-image: url("img/checked.png");
+   background-size: 1.2rem;
+   background-position: center;
+   background-repeat: no-repeat;
+}

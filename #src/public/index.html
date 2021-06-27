@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mini-project-NIX</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+         <div class="container">
+            <div class="header__body d-flex">
+               <div class="header__logo">
+                  <img src="img/logo.png" alt="logo">
+               </div>
+               <div class="burger-menu" id="burger">
+               </div>
+               <nav class="nav">
+                  <ul class="nav__list d-flex">
+                     <li class="nav__item">
+                        <a href="##" class="nav__link">
+                           <span></span>
+                           Summary
+                        </a>
+                     </li>
+                     <li class="nav__item">
+                        <a href="##" class="nav__link">
+                           <span></span>
+                           Hours
+                        </a>
+                     </li>
+                     <li class="nav__item">
+                        <a href="##" class="nav__link nav__link-active">
+                           <span></span>
+                           Projects
+                        </a>
+                     </li>
+                     <li class="nav__item">
+                        <a href="##" class="nav__link">
+                           <span></span>
+                           Time reports
+                        </a>
+                     </li>
+                     <li class="nav__item">
+                        <a href="##" class="nav__link">
+                           <span></span>
+                           Confirmation
+                        </a>
+                     </li>
+                     <li class="nav__item">
+                        <a href="##" class="nav__link">
+                           <span></span>
+                           Mailer
+                        </a>
+                     </li>
+                     <li class="nav__item">
+                        <a href="##" class="nav__link">
+                           <span></span>
+                           Compare
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="header__avatar">
+                  <img src="img/avatar.png" alt="avatar">
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header -->
+      <main class="page">
+         <div class="container">
+            <div class="page__body">
+               <form class="form page__form-filter">
+                  <div class="form__body d-flex">
+                     <div class="form__item">
+                        <label for="selectDev" class="form__label">Dev</label>
+                        <div class="form__select" id="selectDev"></div>
+                     </div>
+                     <div class="form__item">
+                        <label for="selectStatus" class="form__label">Status</label>
+                        <div class="form__select" id="selectStatus"></div>
+                     </div>
+                     <div class="form__item form__checkbox">
+                        <div type="checkbox" class="checkbox" id="checkbox"></div>
+                        <span for="checkbox" class="form__info">Show Efficiency</span>
+                     </div>
+                     <div class="form__item form__btn">
+                        <button class="btn-submit" type="submit">Apply</button>
+                     </div>
+                     <div class="form__item form__btn">
+                        <button type="reset" class="btn-reset">Reset Filters</button>
+                     </div>
+                  </div>
+               </form>
+               <section class="card-info page__section">
+                  <div class="card-info__body">
+                     <div class="cards d-flex">
+                        <div class="card info">
+                           <h2 class="card__title">
+                              Project information
+                           </h2>
+                           <div class="card-info-project">
+                              <table>
+                                 <tr>
+                                    <td class="card__info">Project name</td>
+                                    <td class="card__value">Science & Information Platform</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="card__info">Team lead</td>
+                                    <td class="card__value">Ralph Edwards</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="card__info">Created</td>
+                                    <td class="card__value">25/06/2019</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="card__info">Finished</td>
+                                    <td class="card__value">30/06/2020</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="card__info">Categories</td>
+                                    <td class="card__value">CMS Production</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="card__info">Time</td>
+                                    <td class="card__value">
+                                       <img src="img/billable.png" alt="dollar">
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="card__info">Label</td>
+                                    <td class="card__value">
+                                       <div class="hourly">
+                                          <img src="img/arrow-purple.png" alt="arrow-purple">
+                                          <span>Hourly</span>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="card__info">Tag</td>
+                                    <td class="card__value">
+                                       <a href="##" class="card__link card__link-mokup">
+                                          Page Mockup
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="card__info">Status</td>
+                                    <td class="card__value non">Non Completed</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="card__info card__team">Team</td>
+                                    <td class="card__value">Jane Cooper, Wade Warren, Esther Howard, Cameron Williamson,
+                                       Brooklyn Simmons,
+                                       Leslie
+                                       Alexander, Jenny Wilson, Gur Hawkins, Robert Fox, Jacob Jones, Kristin Watson,
+                                       Cody
+                                       Fisher, Savannah Nguen, Bessie Cooper, Albert Flores, Ralph Edwards, Dianne
+                                       Russel,
+                                       Devon
+                                       Lane, Marvin McKinney, Jerome Bell, Courtney Henry, Theresa Webb, Kathrin Murphu,
+                                       Eleonora
+                                       Pena, Floud Miles, Darrell Steward</td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <h2 class="card__title">
+                              Project Time
+                           </h2>
+                           <div class="card-project card__project d-grid">
+                              <div class="card-project__item">
+                                 <h3 class="card-project__subtitle">Total time (Hours)</h3>
+                                 <div class="card-project__values-special d-flex">
+                                    <div class="card-project__info-special">Changes</div>
+                                    <div class="card-project__value-special">2067.26h</div>
+                                 </div>
+                                 <div class="card-project__values-special d-flex">
+                                    <div class="card-project__info-special">Origin</div>
+                                    <div class="card-project__value-special">1660.55h</div>
+                                 </div>
+                                 <div class="card-project__values d-flex">
+                                    <div class="card-project__info">Programming</div>
+                                    <div class="card-project__value">2345.56h</div>
+                                 </div>
+                                 <div class="card-project__values d-flex">
+                                    <div class="card-project__info">Markup</div>
+                                    <div class="card-project__value">27.18h</div>
+                                 </div>
+                                 <div class="card-project__values d-flex">
+                                    <div class="card-project__info">Graphic Design</div>
+                                    <div class="card-project__value">34h</div>
+                                 </div>
+                                 <div class="card-project__values d-flex">
+                                    <div class="card-project__info">Estimation</div>
+                                    <div class="card-project__value">678h</div>
+                                 </div>
+                                 <div class="card-project__values d-flex">
+                                    <div class="card-project__info">Investigation</div>
+                                    <div class="card-project__value">80.83h</div>
+                                 </div>
+                                 <div class="card-project__values d-flex">
+                                    <div class="card-project__info">Bug Fixing</div>
+                                    <div class="card-project__value">76h</div>
+                                 </div>
+                                 <div class="card-project__values d-flex">
+                                    <div class="card-project__info">Quality Assurance</div>
+                                    <div class="card-project__value">6h</div>
+                                 </div>
+                                 <div class="card-project__values d-flex">
+                                    <div class="card-project__info">Meetings</div>
+                                    <div class="card-project__value">5h</div>
+                                 </div>
+                                 <div class="card-project__values d-flex">
+                                    <div class="card-project__info">Meetings</div>
+                                    <div class="card-project__value">5h</div>
+                                 </div>
+                                 <div class="card-project__values d-flex">
+                                    <div class="card-project__info">Other</div>
+                                    <div class="card-project__value">8256.08h</div>
+                                 </div>
+                                 <div class="card-project__values-special d-flex">
+                                    <div class="card-project__info-special">Sum</div>
+                                    <div class="card-project__value-special">15236.48h</div>
+                                 </div>
+                              </div>
+                              <div class="card-project__item">
+                                 <h3 class="card-project__subtitle">Time (Hours) by Current Month (Sep)</h3>
+                                 <div class="card-project__values-special d-flex">
+                                    <div class="card-project__info-special">Changes</div>
+                                    <div class="card-project__value-special">0h</div>
+                                 </div>
+                                 <div class="card-project__values-special d-flex">
+                                    <div class="card-project__info-special">Origin</div>
+                                    <div class="card-project__value-special">2067.26h</div>
+                                 </div>
+                                 <div class="card-project__values d-flex">
+                                    <div class="card-project__info">Programming</div>
+                                    <div class="card-project__value">1660.55h</div>
+                                 </div>
+                                 <div class="card-project__values-special d-flex">
+                                    <div class="card-project__info-special">Sum</div>
+                                    <div class="card-project__value-special">15236.48h</div>
+                                 </div>
+                                 <div class="card-project__estim">
+                                    <h3 class="card-project__subtitle">Estimations (Hours)</h3>
+                                    <div class="card-project__values-special d-flex">
+                                       <div class="card-project__info-special">Changes</div>
+                                       <div class="card-project__value-special">0h</div>
+                                    </div>
+                                    <div class="card-project__values-special d-flex">
+                                       <div class="card-project__info-special">Origin</div>
+                                       <div class="card-project__value-special">2067.26h</div>
+                                    </div>
+                                    <div class="card-project__values-special d-flex">
+                                       <div class="card-project__info-special">Sum</div>
+                                       <div class="card-project__value-special">15236.48h</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="card-info page__section">
+                  <div class="card-info__body">
+                     <div class="card">
+                        <h2 class="card__title">
+                           Efficiency
+                        </h2>
+                        <div class="card-project card__project d-grid">
+                           <div class="card-project__item">
+                              <h3 class="card-project__subtitle">Total Efficiency</h3>
+                              <div class="card-project__values-special d-flex">
+                                 <div class="card-project__info-special">Changes</div>
+                              </div>
+                              <div class="card-statistic card-project__values-special d-flex">
+                                 <div class="card-statistic__item card-project__info-special">Origin</div>
+                                 <div class="card-statistic__item card-project__value-special">2345.04 h</div>
+                                 <div class="card-statistic__item card-project__percent">100%</div>
+                              </div>
+                              <div class="card-statistic card-project__values-special d-flex">
+                                 <div class="card-statistic__item card-project__info-special">Average</div>
+                                 <div class="card-statistic__item card-project__value-special">2345.04 h</div>
+                                 <div class="card-statistic__item card-project__percent">100%</div>
+                              </div>
+                           </div>
+                           <div class="card-project__item">
+                              <h3 class="card-project__subtitle">Efficiency by Current Month (Sep)</h3>
+                              <div class="card-project__values-special d-flex">
+                                 <div class="card-project__info-special">Changes</div>
+                              </div>
+                              <div class="card-statistic card-project__values-special d-flex">
+                                 <div class="card-statistic__item card-project__info-special">Origin</div>
+                                 <div class="card-statistic__item card-project__value-special">507.26h</div>
+                                 <div class="card-statistic__item card-project__percent">100%</div>
+                              </div>
+                              <div class="card-statistic card-project__values-special d-flex">
+                                 <div class="card-statistic__item card-project__info-special">Average</div>
+                                 <div class="card-statistic__item card-project__value-special">507.26h</div>
+                                 <div class="card-statistic__item card-project__percent">100%</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- <table>
+                  <tr class="data-info__th-titles">
+                     <td data-th="Task name" class="title data-info__td-title">
+                        <div class="data-info__title">
+                           Task name
+                           <img src="img/sort.png" alt="sort">
+                        </div>
+                     </td>
+                     <td data-th="Developer" class="title data-info__td-title">
+                        <div class="data-info__title">
+                           Developer
+                           <img src="img/sort.png" alt="sort">
+                        </div>
+                     </td>
+                     <td data-th="Work Type" class="title data-info__td-title">
+                        <div class="data-info__title">
+                           Work Type
+                           <img src="img/sort.png" alt="sort">
+                        </div>
+                     </td>
+                     <td data-th="Status" data-th="Developer" class="title data-info__td-title">
+                        <div class="data-info__title">
+                           Status
+                           <img src="img/sort.png" alt="sort">
+                        </div>
+                     </td>
+                     <td data-th="Estimation" class="title data-info__td-title">
+                        <div class="data-info__title sort" data-type="sort" data-sort="estimation">
+                           Estimation (h)
+                           <img src="img/sort.png" alt="sort">
+                        </div>
+                     </td>
+                     <td data-th="Total time spent by All" class="title data-info__td-title">
+                        <div class="data-info__title sort" data-type="sort" data-sort="total-time">
+                           Total time spent
+                           by All
+                           <img src="img/sort.png" alt="sort">
+                        </div>
+                     </td>
+                     <td data-th="My Time spent by Period(h)" class="title data-info__td-title">
+                        <div class="data-info__title sort" data-type="sort" data-sort="time-period">
+                           My Time spent by Period (h)
+                           <img src="img/sort.png" alt="sort">
+                        </div>
+                     </td>
+                     <td data-th="Efficiency" class="title data-info__td-title">
+                        <div class="data-info__title sort" data-type="sort" data-sort="efficiency">
+                           Efficiency
+                           <img src="img/sort.png" alt="sort">
+                        </div>
+                     </td>
+                  </tr>
+               </table> -->
+
+               <section class="data-info page__section">
+                  <div class="data-info__table" id="dataInfo">
+                  </div>
+                  <div class="data-total" id="dataInfoTotal">
+                  </div>
+               </section>
+               <section class="pagination page__section">
+                  <div class="pagination__body d-flex">
+                     <div class="pagination__item">
+                        <span class="per-page">Rows per page</span>
+                     </div>
+                     <div class="pagination__item">
+                        <div class="pagination__select" id="selectNum"></div>
+                     </div>
+                     <div class="pagination__item">
+                        <span class="pagination__info">
+                           1-10 of 20
+                        </span>
+                     </div>
+                     <div class="pagination__item" id="pagination">
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__body">
+            2012-2020 © CMS Department of<span> NIX Solutions Ltd.</span>
+         </div>
+      </footer>
+   </div>
+   <script src="../src/index.js"></script>
+</body>
+
+</html>

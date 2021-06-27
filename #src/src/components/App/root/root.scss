@@ -1,0 +1,38 @@
+// variables
+//mx-container
+$mx-container: 130rem;
+//colors
+$bg-body: #1a1e25;
+$bg-header: #242b35;
+$bg-cards: #242b35;
+//color
+$color-default: #b6b4c6;
+$color-attention: #ff6a59;
+$color-comleted: #27ae60;
+$color-purple: #8f7fff;
+$color-title: #ffffff;
+// spaces
+
+// /variables
+// mixins
+@mixin reset() {
+   margin: 0;
+   padding: 0;
+}
+@mixin flex-center() {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+@mixin adaptation($property, $maxSize, $minSize, $mode) {
+   @if $mode == 0 {
+      $addSize: $maxSize - $minSize;
+      @media (max-width: $mx-container#{px}) {
+         #{$property}: calc(#{$minSize + px} + (#{$addSize}) * ((100vw - #{320 + px}) / (#{$mx-container} - 320)));
+      }
+   }
+   @if $mode == 1 {
+      $addSize: $maxSize - $minSize;
+      #{$property}: calc(#{$minSize + px} + (#{$addSize}) * ((100vw - #{320 + px}) / (#{$mx-container} - 320)));
+   }
+}

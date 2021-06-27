@@ -1,0 +1,74 @@
+@import "../App/root/root.scss";
+.pagination {
+   display: none;
+   &__section {
+   }
+   &__body {
+      align-items: center;
+   }
+   &__item {
+   }
+   &__item:not(:first-child) {
+      margin-left: 1.2rem;
+   }
+   &__item:first-child {
+      color: $color-default;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      font-style: normal;
+      font-weight: normal;
+   }
+   &__info {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      color: #b6b4c6;
+   }
+}
+
+.pagination-block {
+   width: 12.2rem;
+   background-color: #242b35;
+   align-items: center;
+   justify-content: space-evenly;
+   padding: 1rem 1.6rem;
+   border: 1px solid #3d444e;
+   border-radius: 7px;
+   &__item {
+      cursor: pointer;
+      &.current {
+         span {
+            background-color: $color-purple;
+            display: inline-block;
+            padding: 0.2rem 0.7rem;
+            border-radius: 0.5rem;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
+         }
+      }
+   }
+   .first {
+   }
+   .second {
+   }
+   .number {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      color: $color-title;
+   }
+}
+@media screen and (max-width: 576px) {
+   .per-page,
+   .pagination__info {
+      font-size: 1.2rem;
+   }
+   .pagination-block {
+      width: 10.2rem;
+      padding: 1rem 0.3rem;
+   }
+}

@@ -1,0 +1,89 @@
+@import "../App/root/root.scss";
+.data-total {
+   background: #2d333d;
+   border-radius: 0.7rem;
+   -webkit-border-radius: 0.7rem;
+   -moz-border-radius: 0.7rem;
+   -ms-border-radius: 0.7rem;
+   -o-border-radius: 0.7rem;
+   table {
+      width: 100%;
+      tr:first-child {
+         padding: 1.2rem 3.2rem;
+      }
+   }
+   &__body {
+      padding: 1.2rem 3.2rem;
+   }
+   &__item:first-child {
+      border-bottom-left-radius: 0.7rem;
+      border-top-left-radius: 0.7rem;
+      padding-left: 3.2rem;
+   }
+   &__item:last-child {
+      border-bottom-right-radius: 0.7rem;
+      border-top-right-radius: 0.7rem;
+      padding-right: 3.2rem;
+   }
+   &__item {
+      padding: 0.6rem 0;
+      color: $color-title;
+      text-align: right;
+      color: #b6b4c6;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+   }
+
+   &__item {
+      width: 10.2%;
+   }
+   &__sum {
+      text-align: left;
+   }
+   &__content {
+      color: $color-title;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .data-total {
+      width: 70%;
+      margin: 0 auto;
+      &__item {
+         width: 100%;
+         display: flex;
+         padding: 0.6rem 3.2rem;
+         justify-content: space-between;
+         color: $color-title;
+         &:before {
+            content: attr(data-th) ": ";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            flex: 0 1 50%;
+            text-align: left;
+         }
+      }
+      &__content {
+         display: flex;
+      }
+      &__sum {
+         display: none;
+      }
+   }
+}
+@media screen and (max-width: 576px) {
+   // .data-total__item:last-child
+   .data-total {
+      width: 100%;
+      &__item {
+         padding: 0.6rem 2rem;
+      }
+      &__item:last-child {
+         padding: 0.6rem 2.2rem;
+      }
+   }
+}
